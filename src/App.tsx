@@ -1,5 +1,9 @@
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 
+import ReviewForm from "./components/ReviewForm";
+import Thanks from "./components/Thanks";
+import UserForm from "./components/UserForm";
+
 import "./App.css";
 
 function App() {
@@ -15,7 +19,9 @@ function App() {
       <div className="form-container">
         <p>Passos</p>
         <form>
-          <div className="inputs-container"></div>
+          <div className="inputs-container">
+            <UserForm />
+          </div>
           <div className="actions">
             <button>
               <GrFormPrevious />
